@@ -2,6 +2,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Code, Palette, Zap } from "lucide-react"
+import { ContactSection } from "@/components/ContactSection"
+
 
 export default function AboutPage() {
   const skills = [
@@ -41,13 +43,11 @@ export default function AboutPage() {
           {/* Bio Section */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-foreground mb-6">
-              I'm a passionate developer and designer who loves creating digital experiences that make a difference.
-              With a background in both technical development and creative design, I bring a unique perspective to every
-              project.
+              I'm a student at UC Santa Barbara, I started off with a little bit of webside development, then transitioned to full-stack,
+              and now I spend most of my time in backend development!
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-              When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or
-              enjoying a good cup of coffee while sketching out ideas for my next project.
+              When I'm not worrying about work or school, you can find me trying out new coffee or eating food.
             </p>
           </div>
 
@@ -67,20 +67,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Contact CTA */}
-          <div className="text-center py-12">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Let's Work Together</h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              I'm always interested in new opportunities and collaborations.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 text-lg rounded-xl"
-            >
-              <a href="mailto:your.email@example.com">Get In Touch</a>
-            </Button>
-          </div>
+          <ContactSection />
         </div>
       </div>
     </main>

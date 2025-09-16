@@ -1,35 +1,47 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, ExternalLink, Github } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
+import { ProjectCard } from "@/components/ProjectCard"
+import { ContactSection } from "@/components/ContactSection"
 
 export default function WorkPage() {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A modern e-commerce solution built with Next.js and Stripe integration.",
-      tech: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
+      title: "GearUp; Shopify SF Hackathon",
+      description:
+        "Interactive fitness & health web app built in a 48-hr Shopify Shop Mini hackathon. Now getting deployed to 5M+ users!",
+      tech: ["Shopify Mini SDK", "Vite", "React", "Tailwind CSS"],
+      liveUrl: "https://screen.studio/share/6floeNUF",
+      githubUrl: "https://github.com/kishangoli/ourMini",
+    },
+    {
+      title: "HopeJam",
+      description:
+        "Synchronous music‐sheet platform where host controls playback and notation in real time.",
+      tech: ["FastAPI/RESTful EPs", "PostgreSQL (Dockerized)", "React", "TypeScript"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/hopekcc/summer-intern-2025",
+    },
+    {
+      title: "Live Chat App",
+      description:
+        "Research oriented chat application enabling real-time messaging via WebSockets. Designed for emotion-recognition experiment research.",
+      tech: ["Python", "Flask", "WebSockets", "Redis"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates and team features.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing creative work and projects.",
-      tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Data Science UCSB Website",
+      description:
+        "Website to showcase the Data Science UCSB org to our 600+ current members and incoming members.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions", "Vercel"],
+      liveUrl: "https://github.com/data-science-ucsb/ds-website-new",
+      githubUrl: "https://datascienceucsb.org/",
     },
   ]
 
   return (
-    <main className="min-h-screen p-4 md:p-8">
+    <main className="min-h-screen p-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -41,50 +53,19 @@ export default function WorkPage() {
           </Button>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">My Work</h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Here are some of the projects I've worked on. Each one represents a unique challenge and learning
-            experience.
+            Here are some of projects that I have done in my free time.
           </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
-                <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex gap-3">
-                    <Button asChild size="sm" className="bg-secondary hover:bg-secondary/90">
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button asChild variant="outline" size="sm">
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+        {/* Projects Stack */}
+        <div className="flex flex-col space-y-12">
+          {projects.map((proj, i) => (
+            <ProjectCard key={i} project={proj} />
           ))}
         </div>
+
+        {/* Contact CTA with Modal */}
+        <ContactSection />
       </div>
     </main>
   )
