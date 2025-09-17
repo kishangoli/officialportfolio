@@ -16,9 +16,9 @@ export function ContactSection() {
 
   return (
     <div className="text-center py-12">
-      <h2 className="text-2xl font-bold text-foreground mb-4">Let's Work Together</h2>
+      <h2 className="text-2xl font-bold text-foreground mb-4">Want to chat?</h2>
       <p className="text-lg text-muted-foreground mb-6">
-        I'm always interested in new opportunities and collaborations.
+        I'm always interested in new chatting or any opportunities.
       </p>
       <Button
         onClick={() => setOpen(true)}
@@ -69,7 +69,7 @@ export function ContactSection() {
                 </button>
 
                 {/* Header */}
-                <h3 className="text-4xl md:text-5xl font-bold mb-4 tracking-wider uppercase">
+                <h3 className="text-4xl md:text-5xl font-bold mb-4 tracking-wider">
                   Contact Me
                 </h3>
                 <div className="h-1 w-24 bg-white mb-8 mx-auto rounded-full shadow-md" />
