@@ -51,11 +51,9 @@ export default function AboutPage() {
           {/* Bio Section */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-foreground mb-6">
-              If there is not much on here right now, I will probably add to it as I go. Kinda want to keep this as a page for more fun stuff.
+              Kinda want to keep this as a page for more fun stuff. Hopefully I add pictures soon.
               <br></br>
-              <br></br>
-              When I'm not thinking about work or school, I will probably be trying new food or coffee. I'll try to add pictures below at some point.
-            
+              <br></br>            
             </p>
             
           </div>
