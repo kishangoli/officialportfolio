@@ -107,13 +107,24 @@ export default function WorkPage() {
                 transition: { type: "spring", stiffness: 300, damping: 20 }
               }}
             >
-              {/* decorative gradient header */}
-              <div className="absolute top-0 left-0 w-full h-36 bg-gradient-to-br from-primary to-secondary" />
+              {/* banner image header */}
+              <div className="absolute top-0 left-0 w-full h-36">
+                <Image
+                  src="/banner.jpg"
+                  alt="Header banner"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+
               <div className="p-6 pt-20 relative">
                 {/* replace placeholder with real image */}
                 <div className="w-20 h-20 mb-4 rounded-full overflow-hidden border-4 border-white bg-gray-200">
                   <Image
-                    src="/avatar.jpg"
+                    //src="/avatar.jpg"
+                    src="/logopotential.jpeg"
                     alt="Kishan Goli"
                     width={80}
                     height={80}

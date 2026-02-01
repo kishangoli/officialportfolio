@@ -51,7 +51,7 @@ export default function AboutPage() {
           {/* Bio Section */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-foreground mb-6">
-              Kinda want to keep this as a page for more fun stuff. Hopefully I add pictures soon.
+              Currently studying CS @ UCSB, looking to add pictures here soon hopefully.
               <br></br>
               <br></br>            
             </p>

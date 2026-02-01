@@ -34,7 +34,7 @@ export default function HomePage() {
                 Hello, I'm Kishan
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                @ uc santa barbara.
+                CS @ UC Santa Barbara.
               </p>
             </div>
 
