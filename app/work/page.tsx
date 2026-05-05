@@ -30,6 +30,18 @@ export default function WorkPage() {
 
   const projects: Project[] = [
     {
+      company: "IBM",
+      role: "Incoming Software Engineer",
+      summary: "Fall 2026.",
+      tech: [],
+    },
+    {
+      company: "American Express",
+      role: "Incoming Software Engineer",
+      summary: "Summer 2026.",
+      tech: [],
+    },
+    {
       company: "Shopify",
       role: "Software Engineer",
       summary:
