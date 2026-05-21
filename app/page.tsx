@@ -53,7 +53,7 @@ export default function HomePage() {
     if (bootDone) inputRef.current?.focus()
   }, [bootDone])
 
-  const quickCommands = useMemo(() => ["help", "work", "about", "socials", "email", "clear"], [])
+  const quickCommands = useMemo(() => ["help", "work", "about", "writing", "socials", "email", "clear"], [])
 
   function appendOutput(text: string) {
     setLines((prev) => [...prev, { type: "output", text }])
@@ -78,6 +78,7 @@ export default function HomePage() {
               "Available commands:\n" +
               "  work     - open work page\n" +
               "  about    - open about page\n" +
+              "  writing  - open writing page\n" +
               "  socials  - show external links\n" +
               "  email    - copy/display email\n" +
               "  clear    - clear terminal\n" +
@@ -94,6 +95,11 @@ export default function HomePage() {
       case "about":
         setLines((prev) => [...prev, { type: "output", text: "Opening /about ..." }])
         setTimeout(() => (window.location.href = "/about"), 500)
+        break
+
+      case "writing":
+        setLines((prev) => [...prev, { type: "output", text: "Opening /writing ..." }])
+        setTimeout(() => (window.location.href = "/writing"), 500)
         break
 
       case "socials":
@@ -289,6 +295,9 @@ export default function HomePage() {
                 </Link>
                 <Link href="/about" className="hover:text-white transition">
                   /about
+                </Link>
+                <Link href="/writing" className="hover:text-white transition">
+                  /writing
                 </Link>
                 <a
                   href="https://github.com/kishangoli"
