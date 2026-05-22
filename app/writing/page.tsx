@@ -21,7 +21,7 @@ export default function WritingPage() {
             Writing
           </h1>
           <p className="max-w-2xl text-lg text-slate-600">
-            Long-form notes, build logs, and technical writing sourced directly from Markdown files in this repo.
+            A few project writeups and general writing posts.
           </p>
         </div>
 
