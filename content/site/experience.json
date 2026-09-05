@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ibm-2026",
+    "company": "IBM",
+    "logo": "ibmlogo.jpg",
+    "role": "Software Developer Engineer Intern",
+    "period": "Fall 2026",
+    "location": "",
+    "summary": "Premium Runtimes for WatsonX Orchestrate",
+    "highlights": [],
+    "tags": ["Software Engineering"]
+  },
+  {
+    "id": "american-express-2026",
+    "company": "American Express",
+    "logo": "amexlogo.png",
+    "role": "Software Engineer Intern",
+    "period": "Summer 2026",
+    "location": "",
+    "summary": "Worked on the Travel Org ✈️",
+    "highlights": ["Built an enterprise SDLC agentic orchestration dev tool to be adopted across the org."],
+    "tags": ["Backend", "Graph Databases", "Data Pipelining", "Agent Orchestration"]
+  },
+  {
+    "id": "hopejam-2025",
+    "company": "HopeJam",
+    "logo": "hopekcclogo.jpg",
+    "role": "Backend Software Engineer Intern",
+    "period": "2025",
+    "location": "",
+    "summary": "Built backend services for collaborative, real-time music experiences.",
+    "highlights": [
+      "Designed REST endpoints and supporting backend workflows.",
+      "Contributed to a real-time platform for hosts and participants."
+    ],
+    "tags": ["FastAPI", "PostgreSQL", "Real-time Systems"]
+  },
+  {
+    "id": "dsucsb-2024",
+    "company": "Data Science UCSB",
+    "logo": "datasciencelogo.png",
+    "role": "Director of Software Development",
+    "period": "2024 - Present",
+    "location": "Santa Barbara, CA",
+    "summary": "Lead web development and technical initiatives for a 600+ member student organization.",
+    "highlights": [
+      "Own website development and operational tooling.",
+      "Support member-facing systems for annual recruitment and events."
+    ],
+    "tags": ["Next.js", "TypeScript", "Leadership"]
+  }
+]

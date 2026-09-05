@@ -1,0 +1,18 @@
+{
+  "name": "Kishan Goli",
+  "eyebrow": "Computer Science Student / Software Engineer",
+  "intro": "I am a student at UC San Diego focused on backend engineering, distributed systems, and infrastructure.",
+  "location": "San Diego, CA",
+  "email": "kigoli@ucsd.edu",
+  "resumeUrl": "",
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kishangoli"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/kishangoli"
+    }
+  ]
+}

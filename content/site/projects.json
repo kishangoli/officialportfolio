@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "shopify-fitness-mini",
+    "title": "Fitness Mini",
+    "organization": "Shopify",
+    "role": "Software Engineer",
+    "summary": "Built an interactive fitness and health web app during Shopify's 48-hour Shop Mini Hackathon. Deployed for 5M+ Users.",
+    "tech": ["React", "Vite", "Shopify Mini SDK", "FalAI"],
+    "media": {
+      "type": "video",
+      "src": "/shopify-demo.mp4",
+      "alt": "Fitness Mini product demo"
+    },
+    "repoUrl": "https://github.com/kishangoli/GearUp",
+    "links": [],
+    "featured": true
+  },
+  {
+    "slug": "hopejam",
+    "title": "HopeJam",
+    "organization": "HopeJam",
+    "role": "Backend Software Engineer Intern",
+    "summary": "Built real-time backend features for a synchronous music-sheet platform with live notation control.",
+    "tech": ["FastAPI", "REST APIs", "PostgreSQL", "CI/CD"],
+    "media": {
+      "type": "image",
+      "src": "/hopejam-demo.jpg",
+      "alt": "HopeJam interface preview"
+    },
+    "repoUrl": "https://github.com/hopekcc/summer-intern-2025",
+    "links": [
+      {
+        "label": "Source",
+        "url": "https://github.com/hopekcc/summer-intern-2025",
+        "kind": "github"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "vector-db",
+    "title": "Vector DB",
+    "organization": "Independent Project",
+    "role": "Systems Engineering",
+    "summary": "Building a GPU-accelerated vector database with a Rust API layer and native interoperability.",
+    "tech": ["Rust", "FFI", "GPU Computing"],
+    "media": {
+      "type": "image",
+      "src": "/vectordbpic.png",
+      "alt": "vector db repo preview"
+    },
+    "repoUrl": "https://github.com/joshL1215/vectorDB",
+    "links": [],
+    "featured": false
+  },
+  {
+    "slug": "dengine-v1",
+    "title": "Dengine v1",
+    "organization": "Independent Project",
+    "role": "Distributed Systems Engineering",
+    "summary": "A distributed DAG-based LLM engine for submitting and visualizing task graphs with dependency-aware scheduling, distributed workers, and fault tolerance.",
+    "tech": ["Distributed Systems", "DAG Scheduling", "LLM Workflows", "Fault Tolerance"],
+    "repoUrl": "https://github.com/",
+    "links": [],
+    "featured": false
+  },
+  {
+    "slug": "context-lens",
+    "title": "Context Lens",
+    "organization": "Independent Project",
+    "role": "Software Engineer",
+    "summary": "Using Gemini Vision models, built a modular app with a goal to help provide conversational cues.",
+    "tech": ["TypeScript", "Next.js"],
+    "media": {
+      "type": "image",
+      "src": "/contextlenspic.png",
+      "alt": "context lens repo preview"
+    },
+    "repoUrl": "https://github.com/kishangoli/OfficialContextLens",
+    "links": [],
+    "featured": false
+  },
+  {
+    "slug": "research-chat-platform",
+    "title": "Research Chat Platform",
+    "organization": "Independent Research",
+    "role": "Machine Learning Research",
+    "summary": "Developed a research-oriented live chat application with emotion recognition and real-time communication.",
+    "tech": ["Python", "Flask", "WebSockets", "Redis"],
+    "repoUrl": "",
+    "links": [],
+    "featured": false
+  },
+  {
+    "slug": "data-science-ucsb",
+    "title": "Data Science UCSB",
+    "organization": "Data Science UCSB",
+    "role": "Director of Software Development",
+    "summary": "Lead full-stack web development and internal tooling for a 600+ member student organization.",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "media": {
+      "type": "image",
+      "src": "/datascienceucsb-demo.jpg",
+      "alt": "Data Science UCSB website preview"
+    },
+    "repoUrl": "https://github.com/data-science-ucsb",
+    "links": [
+      {
+        "label": "Visit site",
+        "url": "https://datascienceucsb.org/",
+        "kind": "external"
+      }
+    ],
+    "featured": false
+  }
+]

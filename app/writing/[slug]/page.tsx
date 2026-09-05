@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { getAllPosts, getPostBySlug } from "@/lib/writing"
 
 type WritingPostPageProps = {
@@ -37,19 +36,17 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
   }
 
   return (
-    <main className="min-h-screen px-4 py-6 md:px-8 md:py-10">
+    <main className="writing-page min-h-screen px-4 py-6 md:px-8 md:py-10">
       <div className="mx-auto max-w-3xl">
-        <Button asChild variant="ghost" className="mb-8">
-          <Link href="/writing" className="flex items-center gap-2">
-            <ArrowLeft size={20} />
-            Back to Writing
-          </Link>
-        </Button>
+        <Link href="/writing" className="writing-back mb-8">
+          <ArrowLeft size={20} />
+          Back to Writing
+        </Link>
 
-        <article className="rounded-[2rem] border border-slate-200 bg-white/95 p-6 shadow-sm md:p-10">
-          <header className="border-b border-slate-200 pb-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">{post.formattedDate}</p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+        <article className="rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-10">
+          <header className="border-b border-white/10 pb-8">
+            <p className="text-sm uppercase tracking-[0.24em] text-white/45">{post.formattedDate}</p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
               {post.title}
             </h1>
             {post.tags.length > 0 && (
@@ -57,7 +54,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700"
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/65"
                   >
                     {tag}
                   </span>
@@ -67,7 +64,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
           </header>
 
           <div
-            className="mt-8 space-y-6"
+            className="writing-content mt-8 space-y-6 text-white/75"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>

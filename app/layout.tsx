@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Kishan Goli - Portfolio',
-  description: 'Hopefully giving some insight into myself!',
+  title: 'Kishan Goli | Software Engineer',
+  description: 'Portfolio of Kishan Goli, a software engineer and UC Santa Barbara computer science student.',
 }
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />
       </body>
