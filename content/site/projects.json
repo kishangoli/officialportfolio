@@ -60,6 +60,11 @@
     "role": "Distributed Systems Engineering",
     "summary": "A distributed DAG-based LLM engine for submitting and visualizing task graphs with dependency-aware scheduling, distributed workers, and fault tolerance.",
     "tech": ["Distributed Systems", "DAG Scheduling", "LLM Workflows", "Fault Tolerance"],
+    "media": {
+      "type": "image",
+      "src": "/denginedemo.png",
+      "alt": "dengine demo preview"
+    },
     "repoUrl": "https://github.com/",
     "links": [],
     "featured": false
