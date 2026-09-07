@@ -43,10 +43,10 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
           Back to Writing
         </Link>
 
-        <article className="rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-10">
-          <header className="border-b border-white/10 pb-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-white/45">{post.formattedDate}</p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
+        <article className="rounded-[2rem] border border-[var(--line)] bg-[var(--surface)] p-6 md:p-10">
+          <header className="border-b border-[var(--line)] pb-8">
+            <p className="text-sm uppercase tracking-[0.24em] text-[var(--text-muted)]">{post.formattedDate}</p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--text)] md:text-5xl">
               {post.title}
             </h1>
             {post.tags.length > 0 && (
@@ -54,7 +54,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/65"
+                    className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-1 text-sm text-[var(--text-muted)]"
                   >
                     {tag}
                   </span>
@@ -64,7 +64,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
           </header>
 
           <div
-            className="writing-content mt-8 space-y-6 text-white/75"
+            className="writing-content mt-8 space-y-6 text-[var(--text-muted)]"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
