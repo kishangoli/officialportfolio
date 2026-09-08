@@ -96,10 +96,3 @@ unsafe impl Send for FfiVectorEngine {}
 ```
 This tells Rust that handling FfiVectorEngine can move across threads and be concurrent, which makes sense as multiple queries can happen. With that, this writeup covers most of our progress so far when it comes to the API Layer and developing the FFI for the server to communicate with our C++ engine. The next steps include developing part of the C++ so it works appropriately with our developed CUDA kernels.
 
-
-
-
-
-
-
-<!-- > Markdown is a better fit for writing than hardcoding posts into React components. -->
